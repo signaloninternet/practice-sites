@@ -1,0 +1,152 @@
+body {
+    font-family: "The Girl Next Door", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    background-color: #FFF8E7; /* Light cream background */
+    color: #333; /* Darker text color for better readability */
+}
+
+header {
+    background-color: #FFF8E7; /* Light cream background */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+    background-image: url(http://www.zingerbugimages.com/backgrounds/purple_stars.gif);
+    background-position: top left;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.header-img-container {
+    margin-bottom: 10px;
+}
+
+.header-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.header-home-link {
+    text-decoration: none;
+    color: #333; /* Darker text color */
+    text-align: center;
+}
+
+.header-title {
+    font-size: 3em;
+    margin: 0;
+    font-family: "Gaegu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #003DA5; /* Korean blue */
+}
+
+.header-small-print {
+    font-size: 2em;
+    color: #757575; /* Grey color */
+    font-family: "Gaegu", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+main {
+    padding: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.widgets {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.widget {
+    background-color: #FFCD00; /* Korean yellow */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #C60C30; /* Korean red */
+    font-size: 2em;
+    font-weight: 700;
+}
+
+input, button {
+    width: calc(100% - 20px);
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #003DA5; /* Korean blue */
+    color: #FFF8E7; /* Light cream text color */
+}
+
+button {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.stopwatch {
+    margin-top: 20px;
+    font-size: 3em; /* Make the timer text bigger */
+    color: #C60C30; /* Korean red */
+    text-align: center;
+    padding: 20px; /* Add padding around the timer */
+    border: 3px solid #003DA5; /* Border with Korean blue color */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #FFF8E7; /* Light cream background */
+}
+
+.settings label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1em;
+}
+
+.settings input {
+    width: 50px;
+    padding: 5px;
+    font-size: 1em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.settings button {
+    width: 100%;
+    padding: 10px;
+    background-color: #003DA5; /* Korean blue */
+    color: #FFF8E7; /* Light cream text color */
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+.settings button:hover {
+    background-color: #FFCD00; /* Korean yellow */
+}

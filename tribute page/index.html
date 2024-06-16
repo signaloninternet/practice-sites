@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily York Times</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+    body{
+        background-color:rgb(0,0,0);
+        background-image:url(http://www.zingerbugimages.com/backgrounds/multi_color_satin_love_bats.gif);
+        background-position:top left;
+        background-repeat:repeat;
+        background-attachment:fixed;
+    }
+    </style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=The+Girl+Next+Door&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <header class="header">
+        <div class="header-wrapper">
+            <div class="header-img-container">
+                <img src="logo.png" alt="A boy" class="header-img">
+            </div>
+            <a href="index.html" class="header-home-link">
+                <h1 class="header-title">Daily York Times</h1>
+                <small class="header-small-print">Read daily, Learn daily, Love daily</small>
+            </a>
+        </div>
+    </header>
+    <main role="main" id="content">
+        <div class="content-wrapper">
+            <div class="widgets">
+                <section class="widget bookmarks">
+                    <h2>Bookmarks</h2>
+                    <div id="bookmarkList"></div>
+                    <input type="text" id="bookmarkName" placeholder="Website Name">
+                    <input type="url" id="bookmarkLink" placeholder="Website Link">
+                    <button id="addBookmarkButton">Add Bookmark</button>
+                </section>
+                <section class="widget pomodoro">
+                    <div class="settings">
+                        <label for="focusTime">Focus Time (minutes):</label>
+                        <input type="number" id="focusTime" min="1" max="60" value="25">
+                        <label for="breakTime">Break Time (minutes):</label>
+                        <input type="number" id="breakTime" min="1" max="30" value="5">
+                        <button id="startButton">Start</button>
+                    </div>
+                    <div id="timer" class="stopwatch">25:00</div>
+                </section>
+                <section class="widget to-do">
+                    <h2>To-Do</h2>
+                    <div id="toDoList"></div>
+                    <input type="text" id="toDoInput" placeholder="New To-Do">
+                    <button id="addToDoButton">Add To-Do</button>
+                </section>
+            </div>
+        </div>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
